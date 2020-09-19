@@ -1,0 +1,131 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Student Score</title>
+</head>
+
+<body>
+    <h3>Enter The Score</h3>
+    <h4>{{ errorStatement }}</h4>
+    <form action="create" method="post">
+    {% csrf_token %}
+        <label for="rollNo">Enter Roll No.: </label>
+        <input type="number" name="rollNo" id="rollNo">
+        <label for="year">Enter Year: </label>
+        <input type="number" name="year" id="year">
+        <label for="grade">Enter The Grade: </label>
+        <select name="grade" id="grade">
+            <option value="">--Please Select Grade:--</option>
+            <option value="AA">AA</option>
+            <option value="AB">AB</option>
+            <option value="BB">BB</option>
+            <option value="BC">BC</option>
+            <option value="CC">CC</option>
+            <option value="CD">CD</option>
+            <option value="DD">DD</option>
+            <option value="FF">FF</option>
+            <option value="XX1">XX1</option>
+            <option value="XX2">XX2</option>
+        </select>
+        <input type="hidden" name="mail" value="{{ mail }}">
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <br>
+    <h4>Entered Data: </h4>
+    <p class="RN">Roll Number: {{ rollNo }}</p><br>
+    <p class="yr">Year: {{ year }}</p><br>
+    <p class="Subject">Subject: {{ subject }}</p><br>
+    <p class="Grade">Grade: {{ grade }}</p><br>
+
+
+</body>
+
+</html>
+-->
+
+{% load static %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enter Student Score</title>
+    <!--Made with love by Mutiullah Samim -->
+
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/teachcreate.css' %}">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3 style="text-align: center; padding-bottom: 0%; margin-bottom: 0;">Enter The Score.</h3>
+                </div>
+                <div class="card-body">
+                    <!--Invalid Login Credentials. Please Try Again-->
+                    <p class="status" style="text-align: center; color: white;font-size: 1rem;">{{ errorStatement }}</p>
+                    <form action="create" method="POST">
+                        {% csrf_token %}
+                        <div class="input-group form-group">
+                            <input type="number" name="rollNo" id="rollNo" placeholder="Roll Number.">
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="number" name="year" id="year" placeholder="Year.">
+                        </div>
+                        <select name="grade" id="grade" class="input-group form-group text-center">
+                            <option value="">--Please Select Grade:--</option>
+                            <option value="AA">AA</option>
+                            <option value="AB">AB</option>
+                            <option value="BB">BB</option>
+                            <option value="BC">BC</option>
+                            <option value="CC">CC</option>
+                            <option value="CD">CD</option>
+                            <option value="DD">DD</option>
+                            <option value="FF">FF</option>
+                            <option value="XX1">XX1</option>
+                            <option value="XX2">XX2</option>
+                        </select>
+                        <div class="form-group">
+                            <button type="submit" value="Submit" class="btn float-right login_btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card disp">
+            <div class="card-header">
+                <h4 class="ed">Entered Data: </h4>
+            </div>
+            <div class="card-body bub">
+                <p class="RN">Roll Number: {{ rollNo }}</p><br>
+                <p class="yr">Year: {{ year }}</p><br>
+                <p class="Subject">Subject: {{ subject }}</p><br>
+                <p class="Grade">Grade: {{ grade }}</p><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

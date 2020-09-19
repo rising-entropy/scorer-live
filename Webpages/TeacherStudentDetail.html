@@ -1,0 +1,99 @@
+{% load static %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Student Detail Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/student.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/teastud.css' %}">
+</head>
+
+<body>
+  <br><br><br><br>
+  <div class="space" style="display: none;">I want to Die.</div>
+  <div class="container">
+    <div>
+      <h3 class="name"> {{ studentName }} </h3>
+      <h4 class="rn">Roll No. {{ rollNo }} </h4>
+           <h5 class="year"> {{ year }} </h5>
+      <h5 class="branch"> {{ branchName }} </h5>
+      <h4 class="resultPan">Result: </h4>
+      <br>
+      <div class="table100 ver5 m-b-110 surrTable">
+        <table class="tab center">
+          <tbody>
+            <tr class="row100 body">
+              <td class="cell100 column1 thead">
+                <strong>Subject.</strong>
+              </td>
+              <td class="cell100 column2 thead">
+                <strong>Grade.</strong>
+              </td>
+            </tr>
+            <tr class="row100 body">
+              <td class="cell100 column1">
+                Discrete Mathematics.
+              </td>
+              <td class="cell100 column2">
+                {{ dmMarks }}
+              </td>
+            </tr>
+            <tr class="row100 body">
+              <td class="cell100 column1">
+                Data Communication.
+              </td>
+              <td class="cell100 column2">
+                {{ dcMarks }}
+              </td>
+            </tr>
+            <tr class="row100 body">
+              <td class="cell100 column1">
+                Computer Organisation and Architecture.
+              </td>
+              <td class="cell100 column2">
+                {{ coaMarks }}
+              </td>
+            </tr>
+            <tr class="row100 body">
+              <td class="cell100 column1">
+                Software Engineering.
+              </td>
+              <td class="cell100 column2">
+                {{ seMarks }}
+              </td>
+            </tr>
+            <tr class="row100 body">
+              <td class="cell100 column1">
+                Probability And Statistics.
+              </td>
+              <td class="cell100 column2">
+                {{ pasMarks }}
+              </td>
+            </tr>
+            <tr class="row100 body">
+              <td class="cell100 column1">
+                Data Structures.
+              </td>
+              <td class="cell100 column2">
+                {{ dsMarks }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

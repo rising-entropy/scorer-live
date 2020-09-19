@@ -1,0 +1,55 @@
+{% load static %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List All Students</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/student.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/teastud.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/listteach.css' %}">
+</head>
+<body>
+<div class="main">
+    <h3 class="title">All Students Scores.</h3>
+
+<div class="card">
+<table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0"
+  width="100%">
+        <thead><tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Roll No.</strong></th>
+            <th><strong>Discrete Math</strong></th>
+            <th><strong>Data Communication</strong></th>
+            <th><strong>Computer Organisation Architecture</strong></th>
+            <th><strong>Software Engineering</strong></th>
+            <th><strong>Probability and Statistics</strong></th>
+            <th><strong>Data Structures</strong></th>
+        </tr></thead>
+        <tbody>
+        {% if stus %}
+        {% for stu in stus %}
+        <tr class="row100 body">
+            <td>{{ stu.fName}} {{stu.lName}}</td>
+            <td>{{ stu.rollNo }}</td>
+            <td class="alig">{{ stu.DMgrade }}</td>
+            <td class="alig">{{ stu.DCgrade }}</td>
+            <td class="alig">{{ stu.COAgrade }}</td>
+            <td class="alig">{{ stu.SEgrade  }}</td>
+            <td class="alig">{{ stu.PaSgrade }}</td>
+            <td class="alig">{{ stu.DSgrade }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        </tbody>
+    </table></div>
+    </div>
+</body>
+</html>
