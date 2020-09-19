@@ -108,7 +108,6 @@ sqlparse==0.2.4
 sshtunnel==0.1.4
 systemd-python==234
 toml==0.10.1
-torbrowser-launcher==0.3.2
 Twisted==18.9.0
 ubuntu-advantage-tools==20.3
 ubuntu-drivers-common==0.0.0
