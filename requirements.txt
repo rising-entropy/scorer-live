@@ -115,6 +115,5 @@ Werkzeug==0.16.1
 whitenoise==5.2.0
 wrapt==1.12.1
 WTForms==2.2.1
-xkit==0.0.0
 zeroconf==0.24.4
 zope.interface==4.7.1
