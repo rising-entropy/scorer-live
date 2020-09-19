@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,
+body {
+    background-image: url('../img/teacherDetail.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(0 0 0 / 78%) !important;
+    width: 500px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 10px;
+}
+
+.year{
+    color: #efefef;
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+
+.branch{
+    font-size: 1.5rem;
+}

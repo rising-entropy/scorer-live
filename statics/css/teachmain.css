@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,
+body {
+    background-image: url('../img/teachmain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.welcz{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 3.6rem;
+    color: #ffffff;
+}
+
+.name{
+    text-align: center;
+    font-size: 2.8rem;
+    color: #e7e7e7;
+}
+
+.subject{
+    text-align: center;
+    color: #fffdfd;
+}
+
+.card {
+    height: 250px;
+    margin-top: 10%;
+    margin-bottom: 0;
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0.288) !important;
+}
+
+button{
+    padding: 3% auto;
+    width: 380px;
+    border-radius: 10px;
+    background-color: #f5c30a;
+    color: #000000;
+    border-color: #000000;
+}
+
+button:hover{
+    background-color: #7a2d00;
+    color: #ffffff;
+}

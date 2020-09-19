@@ -1,0 +1,68 @@
+#grade::placeholder{
+    text-align: center;
+}
+#grade{
+    text-align: center;
+}
+
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,
+body {
+    background-image: url('../img/create.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+option{
+    text-align: center;
+}
+
+button{
+    border-color: black;
+}
+
+.disp{
+    margin: 0 auto;
+}
+
+.RN{
+    text-align: center;
+    color: #ffffff;
+}
+
+.yr{
+    text-align: center;
+    color: #ffffff;
+}
+
+.Subject{
+    text-align: center;
+    color: #ffffff;
+}
+
+.Grade{
+    text-align: center;
+    color: #ffffff;
+}
+
+.ed{
+    text-align: center;
+    color: #ffffff;
+}
+
+.login_btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #a0493d;
+}
+
+.bub{
+    color: #ffffff;
+    padding-bottom: 3%;
+}
+

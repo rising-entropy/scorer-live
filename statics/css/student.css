@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,
+body {
+    background-image: url('../img/student.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.658) !important;
+    width: 500px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 10px;
+}
+
+.tab {
+    color: #e2e2e2;
+    font-size: 1.4rem;
+}
+
+th {
+    color: #e6e4e4;
+}
+
+.thead {
+    padding-bottom: 0.3rem;
+}
+
+.column1 {
+    padding-right: 0.5rem;
+}
+
+.column2 {
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.surrTable{
+    border-radius: 10px;
+    border: 2px #fffefe;
+}
+
+.name{
+    font-size: 2.5rem;
+    color: #f0f0f0;
+}
+
+.rn{
+    color: #fff1f1;
+}
+
+.branch{
+    color: aliceblue;
+}
+
+.resultPan{
+    margin-top: 2%;
+    margin-bottom: 0;
+    color: azure;
+    font-size: 1.8rem;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,
+body {
+    background-image: url('../img/list.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.card {
+    background: rgb(255 255 255 / 72%);
+    width: 90%;
+    padding: 40px;
+    margin: 1% auto;
+    font-family: calibri;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+
+.title{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #000C2E;
+    font-size: 3rem;
+}
+
+th{
+    color: #2f2f2f;
+    font-size: 1.1rem;
+}
+
+td{
+    font-size: 1rem;
+}
+
+thead{
+    padding-bottom: 3%;
+}
+
+.alig{
+    text-align: center;
+}
