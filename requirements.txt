@@ -86,9 +86,7 @@ pyOpenSSL==19.0.0
 PyQt5==5.14.1
 pyRFC3339==1.1
 PySocks==1.6.8
-python-apt==2.0.0+ubuntu0.20.4.1
 python-dateutil==2.7.3
-python-debian===0.1.36ubuntu1
 python-libtorrent==1.1.13
 pytz==2019.3
 pyxattr==0.6.1
