@@ -109,12 +109,7 @@ sshtunnel==0.1.4
 systemd-python==234
 toml==0.10.1
 Twisted==18.9.0
-ufw==0.36
-unattended-upgrades==0.1
 urllib3==1.25.8
-usb-creator==0.3.7
-virtualenv==20.0.31
-virtualenv-clone==0.5.4
 wadllib==1.3.3
 Werkzeug==0.16.1
 whitenoise==5.2.0
