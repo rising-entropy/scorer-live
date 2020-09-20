@@ -3,6 +3,9 @@
 import os
 import sys
 
+# Made by Devang and Kshitij
+# Kshitij: kshitijsabale14@gmail.com
+# Devang: risingentropy20@gmail.com
 
 def main():
     """Run administrative tasks."""
